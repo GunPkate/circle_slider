@@ -22,11 +22,12 @@ body {
 }
 
 @keyframes autoRun{
-    from {
-        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
-    } to { 
-        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
-
+    0% {
+        transform: perspective(1000px) rotateX(-20deg) rotateY(0deg); 
+    } 50% { 
+        transform: perspective(1000px) rotateX(0deg) rotateY(180deg);
+    } 100% {
+        transform: perspective(1000px) rotateX(-20deg) rotateY(360deg);      
     }
 }
 
