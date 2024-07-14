@@ -16,11 +16,16 @@ body {
     height: 250px;
     top: 10%;
     left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 
 .banner .slider .item{
     position: absolute;
     inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--qty)) * 1deg ))
+        translateZ(550px);
 }
 
 img{
