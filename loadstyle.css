@@ -1,9 +1,9 @@
 body {
-    background-color: rgba(200,200, 200, 1);
+    background-color: #eee;
 }
 
 .banner{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     text-align: center;
     overflow: hidden;
@@ -14,24 +14,23 @@ body {
     position: absolute;
     width: 200px;
     height: 250px;
-    top: 80px;
+    top: 10%;
     left: calc(50% - 100px);
     transform-style: preserve-3d;
     transform: perspective(1500px);
-    animation: autoRun 8s linear infinite;
+    animation: autoRun 10s linear infinite;
 }
 
-.banner .sliderBG{
+.banner .slider2{
     position: absolute;
-    width: 300px;
-    height: 125px;
-    top: 90px;
-    left: calc(50% - 150px);
-    background-color: transparent;
-    backdrop-filter: blur(3px);
-    /* animation: autoRun 25s linear infinite; */
+    width: 200px;
+    height: 250px;
+    top: 15%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1500px);
+    animation: autoRun 10s linear infinite;
 }
-
 
 @keyframes autoRun{
     0% {
@@ -48,12 +47,29 @@ body {
     inset: 0 0 0 0;
     transform: 
         rotateY(calc( (var(--position) - 1) * (360 / var(--qty)) * 1.5deg ))
-        translateZ(140px);
+        translateZ(150px);
     margin-top: 120px;
-    font-size: 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.banner .slider2 .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--qty)) * 1.5deg ))
+        translateZ(150px);
+    margin-top: 120px;
+    opacity: .2;
 }
 
+.banner .sliderBG{
+    position: absolute;
+    width: 300px;
+    height: 125px;
+    top: 70px;
+    left: calc(50% - 150px);
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    /* animation: autoRun 25s linear infinite; */
+}
 
 
 
