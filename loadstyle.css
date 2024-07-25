@@ -1,5 +1,5 @@
 body {
-    background-color: #eee;
+    background-color: rgba(200,200, 200, 1);
 }
 
 .banner{
@@ -24,12 +24,13 @@ body {
 .banner .slider2{
     position: absolute;
     width: 200px;
-    height: 250px;
-    top: 15%;
+    height: 125px;
+    top: 10%;
     left: calc(50% - 100px);
     transform-style: preserve-3d;
-    transform: perspective(1500px);
-    animation: autoRun 25s linear infinite;
+    transform: perspective(1500px) translateZ(200px);
+    background-color: rgba(200,200, 200, .9);
+    /* animation: autoRun 25s linear infinite; */
 }
 
 @keyframes autoRun{
@@ -50,25 +51,8 @@ body {
         translateZ(100px);
     margin-top: 120px;
 }
-.banner .slider2 .item{
-    position: absolute;
-    inset: 0 0 0 0;
-    transform: 
-        rotateY(calc( (var(--position) - 1) * (360 / var(--qty)) * 1.5deg ))
-        translateZ(100px);
-    margin-top: 120px;
-    opacity: .2;
-}
 
 
-.banner .slider .blurbg{
-    position: absolute;
-    inset: 0 0 0 0;
-    background-color: rgba(200,200, 200, 1);
-    width: 100%;
-    height: 100%;
-    /* transform: translateZ(-100px); */
-}
 
 
 
