@@ -49,6 +49,11 @@ body {
         rotateY(calc( (var(--position) - 1) * (360 / var(--qty)) * 1.5deg ))
         translateZ(150px);
     margin-top: 120px;
+    font-size: 24px;
+    text-shadow:
+    .1px .1px .2px black,
+    0 0 .05em black,
+    0 0 0.05em black;
 }
 .banner .slider2 .item{
     position: absolute;
@@ -57,7 +62,12 @@ body {
         rotateY(calc( (var(--position) - 1) * (360 / var(--qty)) * 1.5deg ))
         translateZ(150px);
     margin-top: 120px;
-    opacity: .2;
+    opacity: .4;
+    font-size: 24px;
+    text-shadow:
+    .1px .1px .2px black,
+    0 0 .1em black,
+    0 0 0.2em black;
 }
 
 .banner .sliderBG{
