@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 500vh;
+    background-color: #000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    margin: 0.25em 0;
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.logo a {
+    font-size: 28px;
+}
+
+.lottie-container .animation{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+    filter: saturate(2);
+}
+
+.animation::after {
+    content: "";
+    background-image: ("https://upload.wikimedia.org/wikipedia/commons/9/9a/512x512_Dissolve_Noise_Texture.png");
+    width: 200%;
+    height: 200%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    animation: animateGrain 8s step(10) infinite;
+}
+
+.gradient {
+    width: 100vw;
+    height: 200vh;
+    position: relative;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    z-index: 1;
+}
+
+.web-content {
+    position: relative;
+    width: 100%;
+    height: 300vh;
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    z-index: 1;
+}

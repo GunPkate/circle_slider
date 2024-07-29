@@ -8,6 +8,7 @@ body {
     text-align: center;
     overflow: hidden;
     position: relative;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .banner .slider{
